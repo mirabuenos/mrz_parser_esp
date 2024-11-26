@@ -1,0 +1,18 @@
+name: Publish to pub.dev
+
+on:
+  push:
+    tags:
+    - 'v[0-9]+.[0-9]+.[0-9]+*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - name: Publish to pub.dev
+        run: dart pub publish --force
+        env:
+          CLOUDINGCAMP_PUB_CREDENTIALS: ${{ secrets.CLOUDINGCAMP_PUB_CREDENTIALS }}
