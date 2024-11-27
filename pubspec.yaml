@@ -1,12 +1,12 @@
 name: mrz_parser_esp
 description: Parse MRZ (Machine Readable Zone) from identity documents. Enhanced support for European IDs with special focus on Spanish DNI and other EU documents.
-version: 1.0.2
-homepage: https://github.com/mirabuenos/mrz_parser
-repository: https://github.com/mirabuenos/mrz_parser
-issue_tracker: https://github.com/mirabuenos/mrz_parser/issues
+version: 1.0.3
+homepage: https://github.com/mirabuenos/mrz_parser_esp
+repository: https://github.com/mirabuenos/mrz_parser_esp
+issue_tracker: https://github.com/mirabuenos/mrz_parser_esp/issues
 
 environment:
-  sdk: ">=2.12.0 <4.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   meta: ^1.9.2
